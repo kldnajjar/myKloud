@@ -1,7 +1,3 @@
-## Installation
-
-### Clone repo
-
 ```bash
 # clone the repo
 $ git clone https://github.com/kldnajjar/myKloud.git
