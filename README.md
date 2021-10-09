@@ -17,6 +17,9 @@ $ npm run ios
     OR
 $ npm run web
 
+
+Install Expo App from Play or Apple store
+
 ```
 
 copyright 2021 myKloud.
