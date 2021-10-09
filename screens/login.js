@@ -6,14 +6,14 @@ import {
   Image,
   Text,
   Alert,
-  Pressable,
 } from "react-native";
+
+import Button from "../components/button";
+import Separator from "../components/separator";
 
 const oAuthLogin = () => {
   Alert.alert("Simple Button pressed");
 };
-
-const Separator = () => <View style={styles.separator} />;
 
 export default function Login() {
   return (
@@ -39,30 +39,19 @@ export default function Login() {
             paddingVertical: 10,
           }}
         >
-          {/* <Button
-            title="Soical Login"
+          <Button
             onPress={oAuthLogin}
-            color="#445DA7"
-            style={styles.button}
+            buttonStyle={styles.button_1}
+            textStyle={styles.button_text}
+            title="OAuth Login"
           />
           <Separator />
           <Button
+            onPress={() => Alert.alert("In the next stage")}
+            buttonStyle={styles.button_2}
+            textStyle={styles.button_text}
             title="Register"
-            onPress={() => Alert.alert("In the next stage")}
-            color="#5c7fe0"
-            style={styles.button}
-          /> */}
-
-          <Pressable style={styles.button_1} onPress={oAuthLogin}>
-            <Text style={styles.button_text}>Soical Login</Text>
-          </Pressable>
-          <Separator />
-          <Pressable
-            style={styles.button_2}
-            onPress={() => Alert.alert("In the next stage")}
-          >
-            <Text style={styles.button_text}>Register</Text>
-          </Pressable>
+          />
         </View>
       </ImageBackground>
     </View>
@@ -93,11 +82,6 @@ const styles = StyleSheet.create({
   logo: {
     width: 140,
     height: 130,
-  },
-  separator: {
-    marginVertical: 6,
-    borderBottomColor: "#737373",
-    borderBottomWidth: StyleSheet.hairlineWidth,
   },
   button_1: {
     alignItems: "center",
