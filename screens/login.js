@@ -12,7 +12,7 @@ import Button from "../components/button";
 import Separator from "../components/separator";
 
 const oAuthLogin = () => {
-  Alert.alert("Simple Button pressed");
+  Alert.alert("oAuth");
 };
 
 export default function Login() {
@@ -61,6 +61,7 @@ export default function Login() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 8,
   },
   layout: {
     flex: 1,
