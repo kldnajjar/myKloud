@@ -114,4 +114,11 @@ static void InitializeFlipper(UIApplication *application) {
   return [self.authorizationFlowManagerDelegate resumeExternalUserAgentFlowWithURL:url];
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *, id> *) options {
+  if ([self.authorizationFlowManagerDelegate resumeExternalUserAgentFlowWithURL:url]) {
+    return YES;
+  }
+  return [RCTLinkingManager application:app openURL:url options:options];
+ }
+
 @end

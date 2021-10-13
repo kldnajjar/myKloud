@@ -25,7 +25,7 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>com.mykloud</string>
+          <string>com.okta.mykloud</string>
         </array>
       </dict>
     </array>
