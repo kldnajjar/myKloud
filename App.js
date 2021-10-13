@@ -1,12 +1,12 @@
 import React from "react";
 import { StyleSheet, SafeAreaView } from "react-native";
 
-import Login from "./app/screens/login";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Login />
+      <WelcomeScreen />
     </SafeAreaView>
   );
 }

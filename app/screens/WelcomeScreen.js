@@ -15,7 +15,7 @@ const oAuthLogin = () => {
   Alert.alert("oAuth");
 };
 
-export default function Login() {
+export default function WelcomeScreen() {
   return (
     <View style={styles.container}>
       <ImageBackground
