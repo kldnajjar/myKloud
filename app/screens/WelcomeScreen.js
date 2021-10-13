@@ -32,13 +32,7 @@ export default function WelcomeScreen() {
         <View style={styles.layout}>
           <Text style={styles.text}>Data privacy platform over Blockchain</Text>
         </View>
-        <View
-          style={{
-            flex: 1,
-            justifyContent: "flex-end",
-            paddingVertical: 10,
-          }}
-        >
+        <View style={styles.button_container}>
           <Button
             onPress={oAuthLogin}
             buttonStyle={styles.button_1}
@@ -83,6 +77,11 @@ const styles = StyleSheet.create({
   logo: {
     width: 140,
     height: 130,
+  },
+  button_container: {
+    flex: 1,
+    justifyContent: "flex-end",
+    paddingVertical: 10,
   },
   button_1: {
     alignItems: "center",
